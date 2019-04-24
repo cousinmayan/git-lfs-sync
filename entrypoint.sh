@@ -1,5 +1,7 @@
 #!/bin/sh -l
 
+set -eu
+
 # Authenticate Git LFS to avoid rate limiting
 echo "machine github.com
         login ${GITHUB_TOKEN}" > ${HOME}/.netrc
