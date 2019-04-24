@@ -1,11 +1,11 @@
 workflow "Test Git LFS Sync" {
   on = "push"
   resolves = [
-    "actions/download-lfs",
+    "Git LFS Sync",
   ]
 }
 
-action "actions/download-lfs" {
-  uses = "./.github/actions/download-lfs"
+action "Git LFS Sync" {
+  uses = "./"
   secrets = ["GITHUB_TOKEN"]
 }
